@@ -2,6 +2,8 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+vim.opt.runtimepath:append(vim.fn.stdpath("data") .. "/site")
+
 local is_wsl = false
 local is_mac = vim.fn.has("mac") == 1
 local is_windows = vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1
